@@ -3,8 +3,8 @@ rpm = 0
 max_rpm = 8000
 
 function love.load()
-	arrow = love.graphics.newImage("background.png")
-	background = love.graphics.newImage("arrow.png")
+	background = love.graphics.newImage("background.png")
+	arrow = love.graphics.newImage("arrow.png")
 
 end
 
@@ -14,7 +14,9 @@ function love.draw()
     love.graphics.print("RPM:"..rpm, 0, 0)
     
     
-    love.graphics.draw(background,  300, 350,rotation, 5, 5,16,32)
+    love.graphics.draw(background,  300, 350,0, 10, 5,16,32)
+    love.graphics.draw(arrow,  300, 350,rotation, 5, 5,16,32)
+    
     
 end
 
